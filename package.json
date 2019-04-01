@@ -1,0 +1,24 @@
+{
+  "name": "gvhs-reach",
+  "version": "1.0.0",
+  "description": "A social network built for students who have an @garnetvalley.org email address.",
+  "main": "server.js",
+  "dependencies": {
+    "express.js": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laphatize/GVHS-Reach.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laphatize/GVHS-Reach/issues"
+  },
+  "homepage": "https://github.com/Laphatize/GVHS-Reach#readme"
+}
