@@ -4,6 +4,21 @@
     <title> Reach</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDtRzt5OHZ9572wTC9_s8X6cxwdMqfmCHw",
+    authDomain: "gvhs-reach.firebaseapp.com",
+    databaseURL: "https://gvhs-reach.firebaseio.com",
+    projectId: "gvhs-reach",
+    storageBucket: "gvhs-reach.appspot.com",
+    messagingSenderId: "228773882308"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="./javascript/login.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
@@ -14,7 +29,7 @@
 </div>
 
 <div class="w3-bar" style="background-color:black;color:white;">
-  <a href="./index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-home"></i></a>
+    <a href="./index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-home"></i></a>
     <a href="./login.html" class="w3-bar-item w3-button w3-hide-small">Login</a>
     <a href="./register.html" class="w3-bar-item w3-button w3-hide-small">Register</a>
     <a href="./boards.html" class="w3-bar-item w3-button w3-hide-small">Boards</a>
@@ -26,47 +41,15 @@
     <a href="./register.html" class="w3-bar-item w3-button">Register</a>
     <a href="./boards.html" class="w3-bar-item w3-button">Boards</a>
   </div>
-  
-<br>
 
-  <div class="w3-container" style="background-color:#edf0f2;margin-left:4%;margin-right:4%;">
-    <h2> Already have a code?</h2>
-    <input> <button onclick="" class="w3-btn w3-black w3-round w3-small">Submit</button> <br>
-    <br>
-  </div>
-
-  <br>
-
-  <div class="w3-container" style="background-color:#edf0f2;margin-left:4%;margin-right:4%;">
-    <h2> Create a board for your club! </h2>
-    <span id="loggedin?">You must be logged in to create a board.</span>
-    <br>
-    <br>
-  </div>
-
-
-  <br>
-
-<div class="w3-center" style="   padding: 15px;">
-<p1>&copy Pranav Ramesh</p1>
-</div>
-
-
-
-
-
-
-
-  <script>
-  function myFunction() {
-    var x = document.getElementById("demo");
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-  </script>
-
+  <div class="w3-center" style="margin-top:5%;">
+    <img src="https://p18cdn4static.sharpschool.com/UserFiles/Servers/Server_151008/Image/District%20Offices/Administration%20Office/GVHS.jpg"> 
+      <h2>You've been invited to join "GVHS PUBLIC".</h2>
+      <p1><strong>Board Description:</strong> Recieve announcements related to GVHS in this board.</p1>
+ <br>
+ <br>
+      <button class="w3-btn w3-green">Accept</button>
+      <button class="w3-btn w3-red" onclick="window.location.href = '/index.html';">Decline</button>
+    </div>
 
 </body>
